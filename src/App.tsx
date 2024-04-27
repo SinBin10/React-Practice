@@ -22,8 +22,12 @@ const App = ()=>{
     </>
 };*/
 
+function handleButtonClick(){
+  console.log("Button click handled");
+}
+
 const App = ()=>{
-  return (<><Button button={'Binay'}/></>);
+  return (<><Button button={'Binay'} onClick={handleButtonClick}/></>);
 };
 
 export default App;

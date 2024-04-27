@@ -1,10 +1,11 @@
 interface Prop{
     button: string;
+    onClick: ()=>void;
 }
 
-const Button = ({button}: Prop) => {
+const Button = ({button, onClick}: Prop) => {
   return (
-    <button className="btn btn-primary">{button}</button>
+    <button className="btn btn-primary" onClick={onClick}>{button}</button>
   );
 }
 
