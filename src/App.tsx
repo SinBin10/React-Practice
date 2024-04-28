@@ -1,10 +1,11 @@
-//import ListGroup from './components/ListGroup';
+import ListGroup from './components/ListGroup';
+import './App.css';
 // import Practice from './components/PracticeComponents';
-import Alert from './components/alert';
-import { useState } from 'react';
-import Button from './components/Button';
+// import Alert from './components/alert';
+// import { useState } from 'react';
+// import Button from './components/Button';
 
-/*function App(){
+function App(){
   let list1 = ['binay1','binay2','binay3','binay4','binay5'];
   let cities = ['kolkata','jaipur','patna','arrah','ratanpura'];
 
@@ -15,7 +16,7 @@ import Button from './components/Button';
   return (<div> <ListGroup list={cities} heading='Cities' onSelectItem={handleSelectedItem}/><ListGroup list={list1} heading='List' onSelectItem={handleSelectedItem}/></div>);
 }
 
-const App = ()=>{
+/*const App = ()=>{
   return <>
   <Alert>
     Hello <span><h1>World!</h1></span>
@@ -23,7 +24,7 @@ const App = ()=>{
     </>
 };*/
 
-const App = () => {
+/*const App = () => {
   const [state,setState] = useState(false);
   return (
     <>
@@ -33,6 +34,6 @@ const App = () => {
       </Button>
     </>
   );
-};
+};*/
 
 export default App;
