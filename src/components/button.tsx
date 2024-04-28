@@ -1,12 +1,18 @@
-interface Prop{
-    button: string;
-    onClick: ()=>void;
+interface Prop {
+  children: string;
+  color?: "primary" | "secondary" | "danger";
+  onClick: () => void;
 }
 
-const Button = ({button, onClick}: Prop) => {
+const Button = ({ children, onClick, color = "primary" }: Prop) => {
   return (
-    <button className="btn btn-primary" onClick={onClick}>{button}</button>
+    <>
+
+    <button className={"btn btn-"+color} onClick={onClick}>
+      {children}
+    </button>
+    </>
   );
-}
+};
 
 export default Button;

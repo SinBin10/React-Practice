@@ -1,7 +1,8 @@
 //import ListGroup from './components/ListGroup';
 // import Practice from './components/PracticeComponents';
-//import Alert from './components/alert';
-import Button from './components/button';
+import Alert from './components/alert';
+import { useState } from 'react';
+import Button from './components/Button';
 
 /*function App(){
   let list1 = ['binay1','binay2','binay3','binay4','binay5'];
@@ -22,12 +23,16 @@ const App = ()=>{
     </>
 };*/
 
-function handleButtonClick(){
-  console.log("Button click handled");
-}
-
-const App = ()=>{
-  return (<><Button button={'Binay'} onClick={handleButtonClick}/></>);
+const App = () => {
+  const [state,setState] = useState(false);
+  return (
+    <>
+      {state && <Alert onClick={()=>{setState(false)}}>My alert</Alert>}
+      <Button color="secondary" onClick={()=>{setState(true)}}>
+        Hello
+      </Button>
+    </>
+  );
 };
 
 export default App;
