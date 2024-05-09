@@ -17,7 +17,7 @@ function ListGroup({list, heading, onSelectItem}: Props) {
     //type annotation in typescript
     //items: items
     // event handler
-    //list = [];
+    //list = []; 
     return (
     <>
         <h1>{heading}</h1>

@@ -1,20 +1,25 @@
-import ListGroup from './components/ListGroup';
-import './App.css';
+// import ListGroup from './components/ListGroup';
+// import './App.css';
 // import Practice from './components/PracticeComponents';
 // import Alert from './components/alert';
 // import { useState } from 'react';
 // import Button from './components/Button';
+import { BsFillCalendarFill } from 'react-icons/bs';
 
-function App(){
-  let list1 = ['binay1','binay2','binay3','binay4','binay5'];
-  let cities = ['kolkata','jaipur','patna','arrah','ratanpura'];
+const App = () => {
+  return <div><BsFillCalendarFill color="red"/></div>;
+};
 
-  function handleSelectedItem(item: string){
-    console.log(item);
-  }
+// function App(){
+//   let list1 = ['binay1','binay2','binay3','binay4','binay5'];
+//   let cities = ['kolkata','jaipur','patna','arrah','ratanpura'];
 
-  return (<div> <ListGroup list={cities} heading='Cities' onSelectItem={handleSelectedItem}/><ListGroup list={list1} heading='List' onSelectItem={handleSelectedItem}/></div>);
-}
+//   function handleSelectedItem(item: string){
+//     console.log(item);
+//   }
+
+//   return (<div> <ListGroup list={cities} heading='Cities' onSelectItem={handleSelectedItem}/><ListGroup list={list1} heading='List' onSelectItem={handleSelectedItem}/></div>);
+// }
 
 /*const App = ()=>{
   return <>
