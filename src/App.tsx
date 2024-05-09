@@ -3,11 +3,13 @@
 // import Practice from './components/PracticeComponents';
 // import Alert from './components/alert';
 // import { useState } from 'react';
-// import Button from './components/Button';
-import { BsFillCalendarFill } from 'react-icons/bs';
+import Button from './components/Button/Button';
 
 const App = () => {
-  return <div><BsFillCalendarFill color="red"/></div>;
+  return (
+  <div>
+    <Button onClick={()=>{}}>My Button</Button>
+  </div>);
 };
 
 // function App(){
