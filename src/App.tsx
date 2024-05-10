@@ -2,15 +2,27 @@
 // import './App.css';
 // import Practice from './components/PracticeComponents';
 // import Alert from './components/alert';
-import Like from './components/Like';
-
+// import Like from './components/Like';
+import Message_Purity from "./Message_Purity";
 
 const App = () => {
+  return (
+    <div>
+      <Message_Purity/>
+      <Message_Purity/>
+      <Message_Purity/>
+    </div>
+  )
+}
+
+
+
+/*const App = () => {
   return (
   <div>
     <Like onClick={()=>console.log('clicked')}/>
   </div>);
-};
+};*/
 
 // function App(){
 //   let list1 = ['binay1','binay2','binay3','binay4','binay5'];
