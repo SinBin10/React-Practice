@@ -3,14 +3,30 @@
 // import Practice from './components/PracticeComponents';
 // import Alert from './components/alert';
 // import Like from './components/Like';
-import Message_Purity from "./Message_Purity";
+// import Message_Purity from "./Message_Purity";
+import { useState } from "react";
 
 const App = () => {
+  const [Drink, setDrink] = useState({
+    title: 'CocaCola',
+    price: 5
+  })
+
+  const handleClick = ()=>{
+    const newDrink = {
+      // title: Drink.title,
+      // price: 6
+      //or
+      ...Drink,
+      price: 6
+    }
+    setDrink(newDrink);
+  }
+
   return (
     <div>
-      <Message_Purity/>
-      <Message_Purity/>
-      <Message_Purity/>
+      {Drink.price}
+      <button onClick={handleClick}>Click Me</button>
     </div>
   )
 }
