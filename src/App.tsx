@@ -11,7 +11,8 @@ const App = () => {
     title: 'CocaCola',
     price: 5
   })
-
+  //learning how to change multiple things when 
+  //using usestate hook
   const handleClick = ()=>{
     const newDrink = {
       // title: Drink.title,
